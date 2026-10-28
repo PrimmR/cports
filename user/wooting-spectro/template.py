@@ -17,13 +17,14 @@ makedepends = [
 depends = [
     "dinit-chimera-udev",
     "libayatana-appindicator-devel",
+    "zenity",
 ]
 
 pkgdesc = "Spectrum analyzer for Wooting keyboards"
 license = "GPL-3.0-only"
 url = "https://tinkery.primmr.dev/PrimmR/wooting-spectro"
 source = f"{url}/archive/v{pkgver}.tar.gz"
-sha256 = "d0c89176240602787afe1772c5834906b411f691e95fdc9b6e121a8ea2a43d57"
+sha256 = "874c6f591c9333b08e009d9f458e7388086add06bdc8b6abdcee6d26067e3ddb"
 
 
 def install(self):
