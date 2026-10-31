@@ -15,8 +15,8 @@ makedepends = [
     "xdotool-devel",
 ]
 depends = [
-    "dinit-chimera-udev",
     "libayatana-appindicator-devel",
+    "udev",
     "zenity",
 ]
 
@@ -36,4 +36,10 @@ def install(self):
         "icons/icon.svg",
         "usr/share/icons/hicolor/scalable/apps",
         name="wooting-spectro.svg",
+    )
+
+    self.install_file(
+        self.files_path / "udev.rules",
+        "usr/lib/udev/rules.d/",
+        name="70-wooting.rules",
     )
