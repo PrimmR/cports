@@ -15,8 +15,8 @@ makedepends = [
     "xdotool-devel",
 ]
 depends = [
-    "libayatana-appindicator-devel",
-    "udev",
+    "dinit-chimera-udev",
+    "libayatana-appindicator",
     "zenity",
 ]
 
